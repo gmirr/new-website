@@ -2,7 +2,7 @@ appLoading.setColor('#FF9900');
 var cdn_provider_base_url = [];
 var cdn_provider;
 var urlSetDecided = false;
-cdn_provider_base_url.cloudflare = 'https://libs.xieke.org/ajax/libs/';
+cdn_provider_base_url.cloudflare = 'https://cdnjs.cloudflare.com/ajax/libs/';
 
 function decideCDNProvider() {
   var target_cdn_provider = location.hash.substr(1, location.hash.length).toLowerCase();
