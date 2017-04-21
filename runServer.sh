@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 export WEB_CONCURRENCY=1
+export APP=mainSite #api or mainSite
+export LOCAL=true
+
 
 if [ "$APP" == "mainSite" ]; then
     node --expose-gc webServer.js
