@@ -2,7 +2,7 @@ appLoading.setColor('#FF9900');
 var cdn_provider_base_url = [];
 var cdn_provider;
 var urlSetDecided = false;
-cdn_provider_base_url.cloudflare = 'https://cdnjs.cloudflare.com/ajax/libs/';
+cdn_provider_base_url.cloudflare = '//libs.xieke.org/ajax/libs/';
 
 function decideCDNProvider() {
   var target_cdn_provider = location.hash.substr(1, location.hash.length).toLowerCase();
@@ -331,7 +331,7 @@ function setFileURLs(new_provider) {
     var newURL = window.location.origin + '/libraries/' + libraryName + '/' + libraryVersion;
     window.location.href = newURL;
   });
-  console.log("%cThanks for using CDNJS! ߘꢬ "font: 5em roboto; color: #dd4814;");
+  console.log("%cThanks for using Staticfile CDN", "font: 5em roboto; color: #dd4814;");
   $(function () {
     $.scrollUp({
       animation: 'slide',
