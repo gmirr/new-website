@@ -38,7 +38,7 @@ function humanOutput(res, json) {
       '<script defer>hljs.initHighlightingOnLoad();</script>' +
       '<script defer>var output=' + JSON.stringify(json) + '; ' +
       'document.write("<pre><code class=\'json\'>" + JSON.stringify(output,null,2) + "</code></pre>");</script>' +
-      '<script defer>console.log("%cThanks for using CDNJS! 😊", "font: 5em roboto; color: #dd4814;");</script>' +
+      '<script defer>console.log("%cThanks for using CDNJS! ߘꢬ "font: 5em roboto; color: #dd4814;");</script>' +
       '</body></html>';
   res.write(htmlOutput);
   res.end();
@@ -72,7 +72,7 @@ app.get('/libraries', function(req, res) {
     return _.map(packagesByName, function(library) {
       var data = {
         name: library.name,
-        latest: 'https://cdnjs.cloudflare.com/ajax/libs/' + library.name + '/' + library.version + '/' + library.filename
+        latest: 'https://libs.xieke.org/ajax/libs/' + library.name + '/' + library.version + '/' + library.filename
       };
       _.each(fields, function(field) {
         data[field] = library[field] || null;

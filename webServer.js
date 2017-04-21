@@ -177,7 +177,7 @@ function start() {
     return res.redirect(302, request);
   });
 
-  app.get('/cdnjs.cloudflare.com/*', function(req, res) {
+  app.get('/libs.xieke.org/*', function(req, res) {
     return res.redirect(301, 'https:/' + req.url);
   });
 
